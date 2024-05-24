@@ -10,87 +10,95 @@ import { ThemedView } from '@/components/ThemedView';
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#D95B6F', dark: '#813643' }}
       headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Explore</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
+      <Collapsible title="Contato">
         <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
+          Dois Unidos, Recife - PE{' '}
         </ThemedText>
         <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
+          Telefone: (81)98691-7006{' '}
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+
+        <ThemedText>
+        E-mail: <ExternalLink href="mailto:rebekaradassila@gmail.com">
+          <ThemedText type="link">rebekaradassila@gmail.com</ThemedText>
+        </ExternalLink>{' '}
+        </ThemedText>
+
+        <ThemedText>
+          LinkedIn: <ExternalLink href="https://www.linkedin.com/in/radassilasilva">
+          <ThemedText type="link">RadassilaSilva</ThemedText>
+        </ExternalLink>{' '}
+        </ThemedText>
+        
+        <ThemedText>
+        GitHub: <ExternalLink href="https://github.com/radassila">
+          <ThemedText type="link">Radássila Silva</ThemedText>
+        </ExternalLink>{' '}
+        </ThemedText>
+  
+
+        
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+      <Collapsible title="Objetivos">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+        Aprimorar e por em prática as habilidades adquiridas ao decorrer do curso técnico e da graduação atual. Estou em busca da minha primeira experiência profissional em TI, para seguir nessa área.{' '}
         </ThemedText>
       </Collapsible>
-      <Collapsible title="Images">
+      <Collapsible title="Idiomas">
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+        Inglês intermediário nas modalidades de conversação, escrita e leitura.
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Custom fonts">
+
+      <Collapsible title="Formação">
         <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
+          <ThemedText type="defaultSemiBold">* Tecnólogo em análise e desenvolvimento de sistemas/ 2023</ThemedText> {' '}
+        </ThemedText>
+        <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+        -Faculdade SENAC
           </ThemedText>
+          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+        -Cursando o 3° período 
+          </ThemedText>
+
+          <ThemedText>
+          <ThemedText type="defaultSemiBold">* Técnico em Manutenção e suporte em Informática/ 2020 - 2022</ThemedText> {' '}
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+        -Ensino médio técnico integral
+          </ThemedText>
+          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+          -Escola Técnica Estadual Professor Agamemnon Magalhães 
+          </ThemedText>
+
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+      <Collapsible title="Experiência Profissional">
+      <ThemedText>
+          <ThemedText type="defaultSemiBold">* Grupo Provider</ThemedText> {' '}
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+        Período: 07/03/2023 - atualmente
+          </ThemedText>
+          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+         Cargo: Operador de telemarketing 
+          </ThemedText>
+          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
+         Atribuições: Atender os segurados do INSS através da central 135.
+          </ThemedText>
       </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText> library
-          to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
+  
     </ParallaxScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   headerImage: {
-    color: '#808080',
+    color: '#DBDBDB',
     bottom: -90,
     left: -35,
     position: 'absolute',
